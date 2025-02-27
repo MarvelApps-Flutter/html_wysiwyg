@@ -12,12 +12,8 @@ class HtmlWYSIWYGTextField extends StatefulWidget {
   final String? value;
   final double? height;
   final BoxDecoration? decoration;
-  final String widthImage;
   final String? hint;
   final String? customToolbar;
-  final String? customPopover;
-  final bool hasAttachment;
-  final bool showBottomToolbar;
   final Function(String)? returnContent;
   final Function(String)? onNavigate;
 
@@ -26,12 +22,8 @@ class HtmlWYSIWYGTextField extends StatefulWidget {
     this.value,
     this.height,
     this.decoration,
-    this.widthImage = '100%',
     this.hint,
     this.customToolbar,
-    this.customPopover,
-    this.hasAttachment = false,
-    this.showBottomToolbar = true,
     this.returnContent,
     this.onNavigate,
   });
@@ -60,7 +52,7 @@ class HtmlWYSIWYGTextFieldState extends State<HtmlWYSIWYGTextField> {
   @override
   void initState() {
     super.initState();
-    _page = _initPage(widget.customToolbar, widget.customPopover);
+    _page = _initPage(widget.customToolbar);
     _webViewController = WebViewController();
 
     _webViewController!.setJavaScriptMode(JavaScriptMode.unrestricted);
@@ -386,7 +378,7 @@ class HtmlWYSIWYGTextFieldState extends State<HtmlWYSIWYGTextField> {
   }
 
   /// [_initPage] to initial summernote form
-  String _initPage(String? customToolbar, String? customPopover) {
+  String _initPage(String? customToolbar) {
     String toolbar;
     if (customToolbar == null) {
       toolbar = _defaultToolbar;
