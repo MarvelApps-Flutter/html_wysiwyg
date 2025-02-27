@@ -79,7 +79,7 @@ class HtmlWysiwygScreen extends StatelessWidget {
 
 </td>
 <td>
-<img  src="https://github.com/user-attachments/assets/ae1bf733-46a0-4ca4-9019-b1a1ebda8224"  alt="" height= 70 width=70> 
+<img  src="https://github.com/user-attachments/assets/ae1bf733-46a0-4ca4-9019-b1a1ebda8224"  alt="" height= 150 width=150> 
 </td>
 </tr>
 </table>
