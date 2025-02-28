@@ -1,6 +1,6 @@
 # Html WYSIWYG
 
-Html WYSIWYG package lets you add text field with link , bullets , copy paste options , font size , bold and italic customization.
+Html WYSIWYG package lets you add text field with link , bullets , copy paste options , font size , bold, italic and button customization.
 
 ## Installation
 
@@ -8,13 +8,13 @@ Html WYSIWYG package lets you add text field with link , bullets , copy paste op
 
 ```yaml
 dependencies:
-  html_wysiwyg_text_field: ^0.0.1
+  html_wysiwyg_textfield: ^0.0.1
 ```
 
 2. Import the package and use it in your Flutter App.
 
 ```dart
-import 'package:html_wysiwyg_text_field/html_wysiwyg_text_field.dart';
+import 'package:html_wysiwyg_textfield/html_wysiwyg_textfield.dart';
 ```
 
 ## Example
