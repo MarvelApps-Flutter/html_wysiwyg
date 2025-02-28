@@ -91,3 +91,10 @@ class HtmlWysiwygScreen extends StatelessWidget {
 </td> 
 </tr> 
 </table>
+
+
+🔹 Features
+📝 Rich text editing with custom toolbar
+📏 Adjustable editor height
+📂 Supports link navigation
+✂️ Custom copy, cut, and paste actions
