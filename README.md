@@ -63,7 +63,6 @@ class HtmlWysiwygScreen extends StatelessWidget {
                   ),
                 );
               },
-              key: _keyEditor,
               customToolbar: """
                 [
                 ['style', ['bold', 'italic', 'underline', 'clear']],
@@ -87,7 +86,7 @@ class HtmlWysiwygScreen extends StatelessWidget {
 ```
 
 </td> <td style="width: 40%; vertical-align: top; text-align: center;"> 
-  <h3>🎨 Editor Preview</h3> 
+  <h3>🎨 HtmlWYSIWYGTextField Preview</h3> 
   <img src="https://github.com/user-attachments/assets/ae1bf733-46a0-4ca4-9019-b1a1ebda8224" alt="Editor Preview" style="width: 100%; max-width: 300px; height: auto; object-fit: cover;"> 
 </td> 
 </tr> 
