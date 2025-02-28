@@ -1,5 +1,5 @@
 name: html_wysiwyg_textfield
-description: "A new Flutter package project."
+description: Html WYSIWYG package lets you add text field with link , bullets , copy paste options , font size , bold, italic and button customization.
 version: 0.0.1
 homepage: https://github.com/MarvelApps-Flutter/html_wysiwyg/
 

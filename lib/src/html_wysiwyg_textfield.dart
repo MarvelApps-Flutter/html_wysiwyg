@@ -16,6 +16,7 @@ class HtmlWYSIWYGTextField extends StatefulWidget {
   final String? customToolbar;
   final Function(String)? returnContent;
   final Function(String)? onNavigate;
+  final List<String>? fontList;
 
   const HtmlWYSIWYGTextField({
     super.key,
@@ -26,6 +27,7 @@ class HtmlWYSIWYGTextField extends StatefulWidget {
     this.customToolbar,
     this.returnContent,
     this.onNavigate,
+    this.fontList
   });
 
   @override
@@ -432,7 +434,7 @@ class HtmlWYSIWYGTextFieldState extends State<HtmlWYSIWYGTextField> {
           'color': 'white !important'
           });
           \$("#summernote").summernote({
-                fontSizes: ['11', '12', '13', '14'],
+                fontSizes: ${widget.fontList},
                 lineHeights: ['0.3'],
                 placeholder: 'Your text here...',
                 tabsize: 2,
