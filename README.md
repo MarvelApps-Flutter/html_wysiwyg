@@ -31,9 +31,16 @@ There are a number of properties that you can modify:
 
 <hr>
 
+
+# HtmlWysiwygScreen Preview
+
+This screen implements a WYSIWYG HTML editor with a custom toolbar.
+
+## 📜 Code Implementation
+
 <table>
 <tr>
-<td>
+<td style="width: 60%; vertical-align: top;">
 
 ```dart
 class HtmlWysiwygScreen extends StatelessWidget {
@@ -42,44 +49,46 @@ class HtmlWysiwygScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: 
-            HtmlWYSIWYGTextField(
-                height: 300,
-                value: "Your text here...",
-                fontList: const ['11', '12', '13', '14'],
-                onNavigate: (url) {
-                    Navigator.of(context).push(
-                    MaterialPageRoute(
-                        builder: (context) => WebViewScreen(url: url),
-                    ),
-                    );
-                },
-                key: _keyEditor,
-                customToolbar: """
-                                [
-                                ['style', ['bold', 'italic', 'underline', 'clear']],
-                                ['font', ['strikethrough']],
-                                ['fontname', ['fontname']],
-                                ['fontsize', ['fontsize']],
-                                ['para', ['ul', 'ol']],
-                                ['linkButton', ['customLink']],
-                                ['copyButton', ['customCopy']],
-                                ['pasteButton', ['customPaste']],
-                                ['cutButton', ['customCut']]
-
-                                ]
-                            """,
+      body: Column(
+        children: [
+          Expanded(
+            child: HtmlWYSIWYGTextField(
+              height: 300,
+              value: "Your text here...",
+              fontList: const ['11', '12', '13', '14'],
+              onNavigate: (url) {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => WebViewScreen(url: url),
                   ),
+                );
+              },
+              key: _keyEditor,
+              customToolbar: """
+                [
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough']],
+                ['fontname', ['fontname']],
+                ['fontsize', ['fontsize']],
+                ['para', ['ul', 'ol']],
+                ['linkButton', ['customLink']],
+                ['copyButton', ['customCopy']],
+                ['pasteButton', ['customPaste']],
+                ['cutButton', ['customCut']]
+                ]
+              """,
+            ),
+          ),
+        ],
       ),
     );
   }
 }
 ```
 
-</td>
-<td>
-<img  src="https://github.com/user-attachments/assets/ae1bf733-46a0-4ca4-9019-b1a1ebda8224"  alt="" height= 260 width=300> 
-</td>
-</tr>
+</td> <td style="width: 40%; vertical-align: top; text-align: center;"> 
+  <h3>🎨 Editor Preview</h3> 
+  <img src="https://github.com/user-attachments/assets/ae1bf733-46a0-4ca4-9019-b1a1ebda8224" alt="Editor Preview" style="width: 100%; max-width: 300px; height: auto; object-fit: cover;"> 
+</td> 
+</tr> 
 </table>
