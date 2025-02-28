@@ -40,7 +40,7 @@ This screen implements a WYSIWYG HTML editor with a custom toolbar.
 
 <table>
 <tr>
-<td style="width: 60%; vertical-align: top;">
+<td style="width: 50%; vertical-align: top;">
 
 ```dart
 class HtmlWysiwygScreen extends StatelessWidget {
@@ -85,7 +85,7 @@ class HtmlWysiwygScreen extends StatelessWidget {
 }
 ```
 
-</td> <td style="width: 40%; vertical-align: top; text-align: center;"> 
+</td> <td style="width: 50%; vertical-align: top; text-align: center;"> 
   <h3>🎨 HtmlWYSIWYGTextField Preview</h3> 
   <img src="https://github.com/user-attachments/assets/ae1bf733-46a0-4ca4-9019-b1a1ebda8224" alt="Editor Preview" style="width: 100%; max-width: 300px; height: auto; object-fit: cover;"> 
 </td> 
