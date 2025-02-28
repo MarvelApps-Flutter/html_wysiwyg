@@ -93,8 +93,12 @@ class HtmlWysiwygScreen extends StatelessWidget {
 </table>
 
 
-🔹 Features
-📝 Rich text editing with custom toolbar
-📏 Adjustable editor height
-📂 Supports link navigation
-✂️ Custom copy, cut, and paste actions
+## 🔹 Features  
+
+✔️ **Rich Text Editing** – WYSIWYG editor with a customizable toolbar  
+📏 **Adjustable Editor Height** – Modify the height dynamically  
+🔗 **Link Support** – Handles URL navigation seamlessly  
+✂️ **Clipboard Actions** – Custom Copy, Cut, and Paste buttons  
+🖋️ **Text Formatting** – Supports bold, italic, underline, and strikethrough  
+📜 **Lists & Paragraphs** – Easily create ordered/unordered lists  
+
